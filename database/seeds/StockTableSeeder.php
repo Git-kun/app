@@ -126,5 +126,4 @@ class StockTableSeeder extends Seeder
             'imgpath' => 'mobile.jpg',
         ]);
     }
-    }
 }
