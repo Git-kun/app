@@ -15,10 +15,8 @@ class MineTableSeeder extends Seeder
     {
         DB::table('mine')->truncate(); //2回目実行の際にシーダー情報をクリア
         DB::table('mine')->insert([
-            'name' => 'フィルムカメラ',
-            'detail' => '1960年式のカメラです',
-            'fee' => 200000,
-            'imgpath' => 'filmcamera.jpg',
+            'name' => 'ゆうすけ',
+            'age' => '26',
         ]);
     }
 }
