@@ -13,5 +13,6 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);
         $this->call(StockTableSeeder::class); //追記
+        $this->call(MineTableSeeder::class); //追記
     }
 }
