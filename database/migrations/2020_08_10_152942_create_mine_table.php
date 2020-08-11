@@ -15,6 +15,8 @@ class CreateMineTable extends Migration
     {
         Schema::create('mine', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name','50');
+            $table->integer('age');
             $table->timestamps();
         });
     }
