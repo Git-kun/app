@@ -11,6 +11,6 @@ class ShopController extends Controller
     public function index() //追加
     {
         $stocks = Stock::Paginate(6); //Eloquantで検索
-        return view('shop');
+        return view('shop',compact('stocks')); //追記変更
     }
 }
