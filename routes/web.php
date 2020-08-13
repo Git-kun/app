@@ -13,6 +13,7 @@
 
 
 Route::get('/', 'ShopController@index');
+Route::get('/', 'ShopController@myCart');
 
 // Route::get('/', function () {
 //     return view('shop');

@@ -11,14 +11,11 @@
 
                 {{-- 追加 --}}
 
-                 @foreach($stocks as $stock)
-                      {{$stock->name}} <br>
-                      {{$stock->fee}}円<br>
-                      <img src="/image/{{$stock->imgpath}}" alt="" class="incart" >
+                @foreach($carts as $cart)
+                      {{$cart->user_id}} <br>
+                      {{$cart->stock_id}}<br>
                       <br>
-                      {{$stock->detail}} <br>
                  @endforeach
-                 {{$stocks->links()}} 
 
                 {{-- ここまで --}}
                </div>
