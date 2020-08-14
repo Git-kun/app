@@ -11,10 +11,9 @@
 
                 {{-- 追加 --}}
 
-                @foreach($carts as $cart)
-                      {{$cart->user_id}} <br>
-                      {{$cart->stock_id}}<br>
-                      <br>
+                @foreach($my_carts as $my_cart)
+                      {{$my_cart->user_id}} <br>
+                      {{$my_cart->stock_id}}<br>
                  @endforeach
 
                 {{-- ここまで --}}

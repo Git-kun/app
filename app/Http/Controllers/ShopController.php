@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Stock; //追加
+use Illuminate\Support\Facades\Auth;
 use App\Models\Cart; //追加
 
 use Illuminate\Http\Request;
@@ -16,7 +17,7 @@ class ShopController extends Controller
     }
     public function myCart() //追加
     {
-        $carts = Cart::all(); //Eloquantで検索
-        return view('mycart',compact('carts')); //追記変更
+        $my_carts = Cart::all(); //Eloquantで検索
+        return view('my_carts',$my_carts); //追記変更
     }
 }
