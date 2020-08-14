@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Stock; //追加
-use Illuminate\Support\Facades\Auth;
-use App\Models\Cart; //追加
+
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Models\Cart; //追加
 
 class ShopController extends Controller
 {
