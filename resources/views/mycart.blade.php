@@ -4,12 +4,8 @@
 <div class="container-fluid">
    <div class="">
        <div class="mx-auto" style="max-width:1200px">
-          <h1 class="text-center font-weight-bold" style="color:#555555;
-                font-size:1.2em; padding:24px 0px;">カートの中身</h1>
+          <h1 class="text-center font-weight-bold" style="color:#555555; font-size:1.2em; padding:24px 0px;">カートの中身</h1>
             <div class="card-body">
-                  <div class="d-flex flex-row flex-wrap">
-                  商品一覧を出したい<br>
-
                   {{-- 追加 --}}
 
                   @foreach($my_carts as $my_cart)
