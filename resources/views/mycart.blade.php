@@ -8,7 +8,7 @@
                 font-size:1.2em; padding:24px 0px;">カートの中身</h1>
             <div class="card-body">
                   <div class="d-flex flex-row flex-wrap">
-                  商品一覧を出したい
+                  商品一覧を出したい<br>
 
                   {{-- 追加 --}}
 
