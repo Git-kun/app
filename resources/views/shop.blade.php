@@ -7,7 +7,7 @@
            <h1 style="color:#555555; text-align:center; font-size:1.2em; padding:24px 0px; font-weight:bold;">商品一覧</h1>
            <div class="">
                <div class="d-flex flex-row flex-wrap">
-                 商品一覧を出したい
+                 商品一覧を出したい<br>
 
                 {{-- 追加 --}}
 
@@ -15,8 +15,7 @@
                       {{$stock->name}} <br>
                       {{$stock->fee}}円<br>
                       <img src="/image/{{$stock->imgpath}}" alt="" class="incart" >
-                      <br>
-                      {{$stock->detail}} <br>
+                      {{$stock->detail}} <br><br>
                  @endforeach
                  {{$stocks->links()}} 
 
