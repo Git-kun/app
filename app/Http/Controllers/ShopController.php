@@ -18,6 +18,6 @@ class ShopController extends Controller
     public function myCart() //追加
     {
         $my_carts = Cart::all(); //Eloquantで検索
-        return view('my_carts',$my_carts); //追記変更
+        return view('mycarts',compact('my_carts')); //追記変更
     }
 }
