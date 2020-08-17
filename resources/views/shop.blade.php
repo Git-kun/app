@@ -8,20 +8,25 @@
            <div class="">
                <div class="d-flex flex-row flex-wrap">
                  商品一覧を出したい<br>
-
-                {{-- 追加 --}}
-
                  @foreach($stocks as $stock)
                       {{$stock->name}} <br>
                       {{$stock->fee}}円<br>
                       <img src="/image/{{$stock->imgpath}}" alt="" class="incart" >
-                      {{$stock->detail}} <br><br>
+                      {{$stock->detail}} <br>
+                      <form action="mycart" method="post">
+                        @csrf
+                        <input type="hidden" name="stock_id" value="{{ $stock->id }}">
+                        <input type="submit" value="カートに入れる">
+                      </form>
+               </div>
+               <a class="text-center" href="/">商品一覧へ</a>
+           </div>
                  @endforeach
                  {{$stocks->links()}} 
 
-                {{-- ここまで --}}
-               </div>
-           </div>
+                
+               
+           
        </div>
    </div>
 </div>
