@@ -13,7 +13,7 @@
 
 
 Route::get('/', 'ShopController@index');
-Route::get('/mycart', 'ShopController@myCart');
+Route::get('/mycart', 'ShopController@myCart')->middleware('auth');
 
 // Route::get('/', function () {
 //     return view('shop');
