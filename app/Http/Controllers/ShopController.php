@@ -38,7 +38,7 @@ class ShopController extends Controller
 
        $my_carts = Cart::where('user_id',$user_id)->get();
 
-       return view('cart',compact('my_carts' , 'message'));
+       return view('mycart',compact('my_carts' , 'message'));
 
    }
 }
