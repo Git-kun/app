@@ -21,12 +21,10 @@
                </div>
                <a class="text-center" href="/">商品一覧へ</a>
            </div>
-                 @endforeach
-                 {{$stocks->links()}} 
-
-                
-               
-           
+           @endforeach
+           <div class="text-center" style="width: 200px;margin: 20px auto;">
+           {{$stocks->links()}} 
+           </div>
        </div>
    </div>
 </div>
