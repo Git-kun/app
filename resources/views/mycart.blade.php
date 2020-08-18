@@ -9,17 +9,14 @@
 
            <div class="">
                <p class="text-center">{{ $message }}</p><br>
-               <div class="d-flex flex-row flex-wrap">
-
+               <!-- <div class="d-flex flex-row flex-wrap"> -->
                    @foreach($my_carts as $my_cart)
                        <div class="mycart_box">
                            <p>ユーザーID：{{$my_cart->user_id}}</p>
                            <p>ストックID：{{$my_cart->stock_id}}</p>
                        </div>
                    @endforeach
-
                </div>
-
                <a href="/">商品一覧へ</a>
            </div>
        </div>
