@@ -7,7 +7,7 @@
            <h1 class="text-center font-weight-bold" style="color:#555555;  font-size:1.2em; padding:24px 0px;">
            {{ Auth::user()->name }}さんのカートの中身</h1>
 
-           <div class="">
+           <div class="card-body">
                <p class="text-center">{{ $message ?? '' }}</p><br>
                <!-- <div class="d-flex flex-row flex-wrap"> -->
                @foreach($my_carts as $my_cart)
@@ -18,6 +18,8 @@
                             <br>
                             <form action="/cartdelete" method="post">
                                 @csrf
+                                <input type="hidden" name="delete" value="delete">
+                                <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
                                 <input type="hidden" name="stock_id" value="{{ $my_cart->stock->id }}">
                                 <input type="submit" value="カートから削除する">
                             </form>
