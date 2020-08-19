@@ -14,7 +14,16 @@ class Cart extends Model
     public function showCart()
     {
         $user_id = Auth::id();
-        return $this->where('user_id',$user_id)->get();
+        $data['my_carts'] = $this->where('user_id',$user_id)->get();
+
+        $data['count']=0;
+        $data['sum']=0;
+        
+        foreach($data['my_carts'] as $my_cart){
+            $data['count']++;
+            $data['sum'] += $my_cart->stock->fee;
+        }
+        return $data;
     }
 
     public function stock()
@@ -39,8 +48,9 @@ class Cart extends Model
    public function deleteCart($stock_id)
    {
           $user_id = Auth::id(); 
-          $delete = $this->where('user_id', $user_id)->where('stock_id',$stock_id)->delete();
-          
+          $delete = $this->where('user_id', $user_id)->where('stock_id',$stock_id)->delete(); //user_idに該当するログインユーザーが保有しているストック商品を削除
+          // 上の->delete();は削除した数を返す
+
           if($delete > 0){
               $message = 'カートから一つの商品を削除しました';
           }else{

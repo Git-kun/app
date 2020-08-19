@@ -18,8 +18,8 @@ class ShopController extends Controller
 
     public function myCart(Cart $cart)
     {
-        $my_carts = $cart->showCart();
-        return view('mycart',compact('my_carts')); //追記変更
+        $data = $cart->showCart();
+        return view('mycart',$data); //追記変更
         
     }
 
@@ -30,9 +30,9 @@ class ShopController extends Controller
        $message = $cart->addCart($stock_id);
 
        //追加後の情報を取得
-       $my_carts = $cart->showCart();
+       $data = $cart->showCart();
 
-       return view('mycart',compact('my_carts' , 'message'));
+       return view('mycart',$data)->with('message',$message);
    }
 
    public function deleteCart(Request $request,Cart $cart)
@@ -42,8 +42,8 @@ class ShopController extends Controller
        $message = $cart->deleteCart($stock_id);
 
        //追加後の情報を取得
-       $my_carts = $cart->showCart();
+       $data = $cart->showCart();
 
-       return view('mycart',compact('my_carts' , 'message'));
+       return view('mycart',$data)->with('message',$message);
     }
 }
