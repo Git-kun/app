@@ -15,6 +15,7 @@
 Route::get('/', 'ShopController@index');
 Route::get('/mycart', 'ShopController@myCart')->middleware('auth');
 Route::post('/mycart', 'ShopController@addMycart');//追記
+Route::post('/cartdelete', 'ShopController@deleteCart');//追記
 
 // Route::get('/', function () {
 //     return view('shop');
