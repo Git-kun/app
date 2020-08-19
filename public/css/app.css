@@ -10906,6 +10906,7 @@ a.text-dark:focus {
 
 img.cart {
   width: 30px;
+  color: #fefefe;
 }
 
 img.incart {
@@ -10949,4 +10950,3 @@ img.incart {
   width: 200px;
   margin: 20px auto;
 }
-
