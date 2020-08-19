@@ -16,10 +16,11 @@ class ShopController extends Controller
         return view('shop',compact('stocks')); //追記変更
     }
 
-    public function myCart()
+    public function myCart(Cart $cart)
     {
-        $my_carts = Cart::all(); //Eloquantで検索
+        $my_carts = $cart->showCart();
         return view('mycart',compact('my_carts')); //追記変更
+        
     }
 
     public function addMycart(Request $request)
