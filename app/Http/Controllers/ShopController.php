@@ -33,6 +33,11 @@ class ShopController extends Controller
        $my_carts = $cart->showCart();
 
        return view('mycart',compact('my_carts' , 'message'));
-
    }
+
+   public function deleteCart()
+    {
+        $stocks = Stock::Paginate(6); //Eloquantで検索
+        return view('shop',compact('stocks')); //追記変更
+    }
 }
