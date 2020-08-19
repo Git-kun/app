@@ -35,9 +35,15 @@ class ShopController extends Controller
        return view('mycart',compact('my_carts' , 'message'));
    }
 
-   public function deleteCart()
+   public function deleteCart(Request $request,Cart $cart)
     {
-        $stocks = Stock::Paginate(6); //Eloquantで検索
-        return view('shop',compact('stocks')); //追記変更
+        //カートから削除の処理
+       $stock_id=$request->stock_id;
+       $message = $cart->deleteCart($stock_id);
+
+       //追加後の情報を取得
+       $my_carts = $cart->showCart();
+
+       return view('mycart',compact('my_carts' , 'message'));
     }
 }
