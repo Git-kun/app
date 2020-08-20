@@ -29,6 +29,6 @@ class Thanks extends Mailable
     public function build()
     {
         return $this->markdown('mails.thanks',$this->mail_data) //編集
-        ->subject('Larashopでのご購入ありがとうございます'); //追記
+        ->subject('Shopsiteでのご購入ありがとうございます'); //追記
     }
 }
