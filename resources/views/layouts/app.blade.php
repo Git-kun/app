@@ -76,8 +76,6 @@
                                <img src="{{ asset('image/cart.png') }}" class="cart" >
                            </a>
                        @endguest
-
-
                    </ul>
                </div>
            </div>
