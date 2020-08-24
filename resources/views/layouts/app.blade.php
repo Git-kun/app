@@ -84,7 +84,7 @@
            @yield('content')
        </main>
        <footer class="footer_design">
-
+<!-- 
         @guest
             <p class="nav-item" style="display:inline;">
                 <a class="nav-link" href="{{ route('login') }}" style="color:#fefefe; display:inline;">{{ __('ログイン') }}</a>
@@ -96,12 +96,12 @@
             @endif
         
         @endguest
-        <br>
+        <br> -->
         <div style="margin-top:24px;">
         <br>
         <p style="font-size:2.4em">Shopsite</p><br>
         </div>
-        <p style="font-size:0.7em;">@copyright @mukae9</p>
+        <!-- <p style="font-size:0.7em;">@copyright @mukae9</p> -->
        </footer>
    </div>
 </body>
