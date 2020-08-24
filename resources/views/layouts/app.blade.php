@@ -103,7 +103,6 @@
         </div>
         <!-- <p style="font-size:0.7em;">@copyright @mukae9</p> -->
        </footer>
-       
    </div>
 </body>
 </html>
