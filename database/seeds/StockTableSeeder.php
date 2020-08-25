@@ -14,6 +14,13 @@ class StockTableSeeder extends Seeder
     {
         DB::table('stocks')->truncate(); //2回目実行の際にシーダー情報をクリア
         DB::table('stocks')->insert([
+            'name' => 'ぬいぐるみ',
+            'detail' => '新品です',
+            'fee' => 300,
+            'imgpath' => 'plushdoll.jpg',
+        ]);
+        
+        DB::table('stocks')->insert([
             'name' => 'サボテン',
             'detail' => 'インテリアにどうぞ',
             'fee' => 600,
