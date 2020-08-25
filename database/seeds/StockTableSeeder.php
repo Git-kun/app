@@ -14,6 +14,48 @@ class StockTableSeeder extends Seeder
     {
         DB::table('stocks')->truncate(); //2回目実行の際にシーダー情報をクリア
         DB::table('stocks')->insert([
+            'name' => 'サボテン',
+            'detail' => 'インテリアにどうぞ',
+            'fee' => 600,
+            'imgpath' => 'saboten.jpg',
+        ]);
+        
+        DB::table('stocks')->insert([
+            'name' => 'ロングTシャツ',
+            'detail' => '新中古品',
+            'fee' => 1000,
+            'imgpath' => 'greenlong t-shirt.png',
+        ]);
+        
+        DB::table('stocks')->insert([
+            'name' => 'くつ',
+            'detail' => 'アメコミのスニーカー',
+            'fee' => 1500,
+            'imgpath' => 'shoes.jpg',
+        ]);
+        
+        DB::table('stocks')->insert([
+            'name' => 'ボストンバッグ',
+            'detail' => '旅行用',
+            'fee' => 3000,
+            'imgpath' => 'bostonbag.jpg',
+        ]);
+        
+        DB::table('stocks')->insert([
+            'name' => '自転車',
+            'detail' => '通勤用です',
+            'fee' => 12000,
+            'imgpath' => 'bicycle.jpg',
+        ]);
+
+        DB::table('stocks')->insert([
+            'name' => 'カラークリップ',
+            'detail' => '新品です',
+            'fee' => 200,
+            'imgpath' => 'colorclip.jpg',
+        ]);
+
+        DB::table('stocks')->insert([
             'name' => 'フィルムカメラ',
             'detail' => '1960年式のカメラです',
             'fee' => 200000,
