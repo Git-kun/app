@@ -2,12 +2,12 @@
 
 
 
-<h1 align="left">簡易メモ</h1>
+<h1 align="left">ECサイト</h1>
 <br>
 
 ##  App URL
 
-### **http://enfight.obearda.com/**
+### **http://laravelshopsite.obearda.com/**
 - メールアドレス：test@com
 - パスワード：111111
 
