@@ -1,5 +1,61 @@
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
+
+
+<h1 align="left">簡易メモ</h1>
+<br>
+
+##  App URL
+
+### **http://enfight.obearda.com/**
+- メールアドレス：test@com
+- パスワード：111111
+
+##  開発環境
+
+- 開発言語　　　　　：PHP（7.4）
+- データベース　　　：MySQL（5.7）
+- バージョン管理　　：GitHub
+- テキストエディター：VSCode（Visual Studio Code）
+
+---
+
+# DB設計
+## membersテーブル
+- 登録ユーザー
+
+|Column|Type|Options|
+|------|----|-------|
+|id|int|primary_key|
+|name|var||
+|email|varchar||
+|password|varchar||
+|age|tinyint||
+|gender|varchar||
+|picture|varchar||
+|created|datetime||
+|modified|timestamp||
+
+## memosテーブル
+- 投稿したメモ
+
+|Column|Type|Options|
+|------|----|-------|
+|id|int|primary_key|
+|memo|text||
+|member_id|int||
+|reply_message_id|int||
+|created_at|datetime||
+|modified|timestamp||
+
+
+
+
+
+
+
+
+
 <!-- <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
