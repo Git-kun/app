@@ -17,11 +17,10 @@
 
 ##  開発環境
 
-
-<!-- - 開発言語　　　　　：PHP（7.4）
+- 開発言語　　　　　：PHP（7.3）
 - データベース　　　：MySQL（5.7）
 - バージョン管理　　：GitHub
-- テキストエディター：VSCode（Visual Studio Code） -->
+- テキストエディター：VSCode（Visual Studio Code）
 
 ---
 
