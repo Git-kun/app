@@ -40,17 +40,18 @@
 |created_at|timestamp||
 |updated_at|timestamp||
 
-## memosテーブル
-- 投稿したメモ
+## stocksテーブル
+- 商品
 
 |Column|Type|Options|
 |------|----|-------|
 |id|int|primary_key|
+|created_at|datetime||
+|modified|timestamp||
 |memo|text||
 |member_id|int||
 |reply_message_id|int||
-|created_at|datetime||
-|modified|timestamp||
+
 
 
 
