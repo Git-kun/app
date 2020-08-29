@@ -19,6 +19,7 @@
 
 - 開発言語　　　　　：PHP（7.3）
 - データベース　　　：MySQL（5.7）
+- 環境構築　　　　　：Docker(Laradock）
 - バージョン管理　　：GitHub
 - テキストエディター：VSCode（Visual Studio Code）
 
