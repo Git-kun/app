@@ -52,9 +52,16 @@
 |fee|int||
 |imgpath|varchar||
 
+## cartsテーブル
+- カートの中
 
-
-
+|Column|Type|Options|
+|------|----|-------|
+|id|int|primary_key|
+|stock_id|int||
+|user_id|int||
+|created_at|timestamp||
+|updated_at|timestamp||
 
 
 
