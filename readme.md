@@ -26,20 +26,19 @@
 ---
 
 # DB設計
-## membersテーブル
-- 登録ユーザー
+## usersテーブル
+- 登録会員ユーザー
 
-<!-- |Column|Type|Options|
+|Column|Type|Options|
 |------|----|-------|
 |id|int|primary_key|
-|name|var||
+|name|varchar||
 |email|varchar||
+|email_verified_at|timestamp||
 |password|varchar||
-|age|tinyint||
-|gender|varchar||
-|picture|varchar||
-|created|datetime||
-|modified|timestamp|| -->
+|remember_token|varchar||
+|created_at|timestamp||
+|updated_at|timestamp||
 
 ## memosテーブル
 - 投稿したメモ
