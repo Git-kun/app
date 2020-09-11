@@ -19,20 +19,14 @@
                                    <br>
                                    {{$stock->detail}} <br>
 
-                                    {{-- 追加 --}}
-
                                    <form action="mycart" method="post">
                                        @csrf
                                        <input type="hidden" name="stock_id" value="{{ $stock->id }}">
                                        <input type="submit" value="カートに入れる">
                                    </form>
-
-                                    {{-- ここまで --}}
                                </div>
 
-                                {{-- 追加 --}}
-                               <!-- <a class="text-center" href="/">商品一覧へ</a> -->
-                                {{-- ここまで --}}  
+ 
  
                            </div>
                        @endforeach                    
