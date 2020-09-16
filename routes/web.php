@@ -14,7 +14,7 @@
 
 Route::get('/', 'ShopController@index'); //最初に表示する画面
 
-Route::group(['middleware' => ['auth']], function () {
+Route::group(['middleware' => ['auth']], function () { //下記の動作をログイン済でないと実行しない
   Route::get('/mycart', 'ShopController@myCart'); //自分のカートの中
   Route::post('/mycart', 'ShopController@addMycart'); //カートにPOSTで商品を追加
   Route::post('/cartdelete', 'ShopController@deleteCart'); //カート内の商品を削除
