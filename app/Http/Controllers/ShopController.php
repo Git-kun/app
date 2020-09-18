@@ -14,7 +14,7 @@ class ShopController extends Controller
 {
     public function index()
     {
-        $stocks = Stock::Paginate(6); //Eloquantで検索(ページネーション)
+        $stocks = Stock::Paginate(6); //Eloquantで検索(6つのデータを1ページにページネーション)
         return view('shop',compact('stocks')); 
     }
 
