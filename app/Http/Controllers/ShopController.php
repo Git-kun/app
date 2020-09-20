@@ -33,7 +33,6 @@ class ShopController extends Controller
 
        //追加後の情報を取得
        $data = $cart->showCart();
-
        return view('mycart',$data)->with('message',$message);
    }
 
