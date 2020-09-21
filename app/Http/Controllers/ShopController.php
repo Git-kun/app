@@ -18,7 +18,7 @@ class ShopController extends Controller
         return view('shop',compact('stocks')); 
     }
 
-    public function myCart(Cart $cart) //カートを確認
+    public function myCart(Cart $cart) //カートの中身を確認
     {
         $data = $cart->showCart();
         return view('mycart',$data); 
