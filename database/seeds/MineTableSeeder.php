@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB; //追記
+use Illuminate\Support\Facades\DB;
 
 
 class MineTableSeeder extends Seeder
