@@ -28,7 +28,7 @@ class Thanks extends Mailable
      */
     public function build()
     {
-        return $this->markdown('mails.thanks',$this->mail_data) //編集
-        ->subject('Shopsiteでのご購入ありがとうございます'); //追記
+        return $this->markdown('mails.thanks',$this->mail_data)
+        ->subject('Shopsiteでのご購入ありがとうございます');
     }
 }
