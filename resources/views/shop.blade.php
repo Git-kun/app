@@ -9,8 +9,6 @@
                <div class="d-flex flex-row flex-wrap">
            
                        @foreach($stocks as $stock)
-
-                           
                            <div class="col-xs-6 col-sm-4 col-md-4 ">
                                <div class="mycart_box">
                                    {{$stock->name}} <br>
