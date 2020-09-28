@@ -23,7 +23,6 @@
                                        <input type="submit" value="カートに入れる">
                                    </form>
                                </div>
-
                            </div>
                        @endforeach                    
                </div>
