@@ -8,7 +8,7 @@
            <div class="">
                <div class="d-flex flex-row flex-wrap">
            
-                       @foreach($stocks as $stock)
+                       @foreach($stocks as $stock) <!--商品情報を$stocksでforeach文で回す -->
                            <div class="col-xs-6 col-sm-4 col-md-4 ">
                                <div class="mycart_box">
                                    {{$stock->name}} <br>
@@ -24,7 +24,7 @@
                                    </form>
                                </div>
                            </div>
-                       @endforeach                    
+                       @endforeach
                </div>
                <div class="text-center" style="width: 200px;margin: 20px auto;">
                {{  $stocks->links()}} 
