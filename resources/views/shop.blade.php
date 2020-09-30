@@ -16,7 +16,6 @@
                                    <img src="/image/{{$stock->imgpath}}" alt="" class="incart" >
                                    <br>
                                    {{$stock->detail}} <br>
-
                                    <form action="mycart" method="post">
                                        @csrf
                                        <input type="hidden" name="stock_id" value="{{ $stock->id }}">
