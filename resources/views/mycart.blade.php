@@ -6,7 +6,6 @@
        <div class="mx-auto" style="max-width:1200px">
            <h1 class="text-center font-weight-bold" style="color:#555555;  font-size:1.2em; padding:24px 0px;">
            {{ Auth::user()->name }}さんのカートの中身</h1>
-
            <div class="card-body">
                <p class="text-center">{{ $message ?? '' }}</p><br>
                @if($my_carts->isNotEmpty()) <!-- $my_cartsに値が入っていると下記処理 -->
