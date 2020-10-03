@@ -10913,19 +10913,20 @@ img.cart {
   border-bottom: 2px solid #FEFEFE;
   /* float: right; */
   line-height: 0;
-  
-  
 }
 
 .fText {
   background: none;
   border: none;
   width: 140px;
-  outline: none;  
+  outline: none;
+  /* border-radius:0px; */
+  
 }
 
 .search {
   width: 30px;
+  
 }
 
 img.incart {
