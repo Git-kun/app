@@ -76,6 +76,21 @@
                                <img src="{{ asset('image/cart.png') }}" class="cart" >
                            </a>
                        @endguest
+                       <div class="inputBox">
+                        <form name="search_form" id="search_form" method="get" action="../goods/search.aspx">
+                            <input type="hidden" name="search" value="true" />
+                            <input type="image" img src="{{ asset('image/search.png') }}" name="__submit__" value="" class="search">
+                            <input type="text" class="fText" name="keyword" value="">
+                        </form>
+                       </div>
+                       <!-- <div class="col-sm-4" style="padding:20px 0; padding-left:0px;">
+                        <form class="form-inline" action="{{url('/アクション名')}}">
+                        <div class="form-group">
+                            <input type="text" placeholder="名前を入力してください">
+                        </div>
+                        <input type="submit" value="検索" class="btn btn-info">
+                        </form>
+                        </div> -->
                    </ul>
                </div>
            </div>
@@ -99,7 +114,7 @@
         <br> -->
         <div style="margin-top:24px;">
         <br>
-        <p style="font-size:2.4em">Shopsite</p><br>
+        <a class="navbar-brand" style="color:#fefefe; font-size:2.4em" href="{{ url('/') }}" >Shopsite</p><br>
         </div>
        </footer>
    </div>

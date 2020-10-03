@@ -10909,6 +10909,11 @@ img.cart {
   /* color: #fefefe; */
 }
 
+.search {
+  width: 30px;
+  /* color: #fefefe; */
+}
+
 img.incart {
   width: 50%;
   display: block;
