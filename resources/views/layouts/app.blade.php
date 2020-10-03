@@ -77,10 +77,10 @@
                            </a>
                        @endguest
                        <div class="inputBox">
-                        <form name="search_form" id="search_form" method="get" action="../goods/search.aspx">
-                            <input type="hidden" name="search" value="true" />
-                            <input type="image" img src="{{ asset('image/search.png') }}" name="__submit__" value="" class="search">
-                            <input type="text" class="fText" name="keyword" value="">
+                        <form name="search_form" id="search_form" method="get" action="{{url('/search')}}">
+                            <!-- <input type="hidden" name="search" value="true" /> -->
+                            <input type="image" img src="{{ asset('image/search.png') }}" value="" class="search">
+                            <input type="text" class="fText" name="name">
                         </form>
                        </div>
                        <!-- <div class="col-sm-4" style="padding:20px 0; padding-left:0px;">

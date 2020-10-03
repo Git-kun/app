@@ -19,6 +19,7 @@ Route::group(['middleware' => ['auth']], function () { //下記の動作をロ�
   Route::post('/mycart', 'ShopController@addMycart'); //カートにPOSTで商品を追加
   Route::post('/cartdelete', 'ShopController@deleteCart'); //カート内の商品を削除
   Route::post('/checkout', 'ShopController@checkout'); //商品を購入→メール送信
+  Route::get('/search','ShopController@search');
 });
 
 Auth::routes();
