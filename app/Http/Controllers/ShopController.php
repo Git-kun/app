@@ -65,16 +65,14 @@ class ShopController extends Controller
         $search = $request->input('name');
 
         // ユーザ名入力フォームで入力した文字列を含むカラムを取得します
-        if ($request->has('name') && $search != '') {
+        if ($request->has('name') && $search != '') { //nameをリクエストで持っていることなおかつ$request値が空でないこと
             $query->where('name', 'like', '%'.$search.'%')->get();
         }
 
-        //ユーザを1ページにつき10件ずつ表示させます
-        $data = $query->paginate(10);
+        //ユーザを1ページにつき6件ずつ表示させます
+        $data = $query->paginate(6);
 
-        return view('users.search',[
-            'data' => $data
-        ]);
+        return view('search',['data' => $data]);
     }
     
 }
