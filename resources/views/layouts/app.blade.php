@@ -77,20 +77,12 @@
                            </a>
                        @endguest
                        <div class="inputBox">
-                        <form name="search_form" id="search_form" method="get" action="{{url('/search')}}">
+                        <form name="search_form" class="search_form" method="get" action="{{url('/search')}}">
                             <!-- <input type="hidden" name="search" value="true" /> -->
-                            <input type="image" img src="{{ asset('image/search.png') }}" value="" class="search">
+                            <input type="image" img src="{{ asset('image/search.png') }}" class="search">
                             <input type="text" class="fText" name="name">
                         </form>
                        </div>
-                       <!-- <div class="col-sm-4" style="padding:20px 0; padding-left:0px;">
-                        <form class="form-inline" action="{{url('/アクション名')}}">
-                        <div class="form-group">
-                            <input type="text" placeholder="名前を入力してください">
-                        </div>
-                        <input type="submit" value="検索" class="btn btn-info">
-                        </form>
-                        </div> -->
                    </ul>
                </div>
            </div>
