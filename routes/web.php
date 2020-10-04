@@ -21,7 +21,7 @@ Route::group(['middleware' => ['auth']], function () { //下記の動作をロ�
   Route::post('/checkout', 'ShopController@checkout'); //商品を購入→メール送信
 });
 
-Route::get('/search','ShopController@search');
+Route::get('/search','ShopController@search'); //検索フォーム実行
 
 Auth::routes();
 
