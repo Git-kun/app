@@ -1,6 +1,5 @@
 <!-- <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p> -->
 
-
 <h1 align="left">ECサイト</h1>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/56929408/91583534-550f9800-e98c-11ea-8bd3-971b94fb77d9.png">
