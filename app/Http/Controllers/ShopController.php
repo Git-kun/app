@@ -72,7 +72,7 @@ class ShopController extends Controller
         //ユーザを1ページにつき6件ずつ表示させます
         $data = $query->paginate(6);
 
-        return view('search',['data' => $data]);
+        return view('search',['data' => $data]); //検索結果の画面を返す
     }
     
 }
