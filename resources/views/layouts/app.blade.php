@@ -79,7 +79,7 @@
                        <div class="inputBox">
                         <form name="search_form" class="search_form" method="get" action="{{url('/search')}}">
                             <!-- <input type="hidden" name="search" value="true" /> -->
-                            <input type="image" img src="{{ asset('image/search.png') }}" class="search">
+                            <img src="{{ asset('image/search.png') }}" class="cart">
                             <input type="text" class="fText" name="name">
                         </form>
                        </div>
