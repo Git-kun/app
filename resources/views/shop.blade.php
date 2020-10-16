@@ -12,10 +12,10 @@
                <div class="flex flex-row flex-wrap"> 
                        @foreach($stocks as $stock) <!--商品情報を$stocksでforeach文で回す -->
                            <div class="col-xs-6 col-sm-4 col-md-4 ">
-                               <div class="max-w-sm rounded overflow-hidden shadow-lg font-semibold text-center my-3 py-3">
+                               <div class="max-w-sm rounded overflow-hidden shadow-lg font-semibold text-center my-3 p-4">
                                    {{$stock->name}} <br>
                                    {{$stock->fee}}円<br>
-                                   <img src="/image/{{$stock->imgpath}}" alt="" class="incart" >
+                                   <img src="/image/{{$stock->imgpath}}" alt="" class="object-scale-down h-48 w-full" >
                                    <br>
                                    {{$stock->detail}} <br>
                                    <form action="mycart" method="post">
@@ -30,7 +30,8 @@
                            </div>
                        @endforeach
                </div>
-               <div class="text-center" style="width: 200px;margin: 20px auto;">
+               <!-- <div class="text-center" style="width: 200px;margin: 20px auto;"> -->
+               <div class="flex justify-center pb-3">
                {{  $stocks->links()}} 
                </div>
            </div>

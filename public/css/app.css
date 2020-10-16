@@ -10567,14 +10567,14 @@ img.cart {
   width: 30px;
 }
 
-img.incart {
+/* img.incart {
   width: 50%;
   display: block;
   margin: 0 auto;
   height: 140px;
   -o-object-fit: cover;
      object-fit: cover;
-}
+} */
 
 .mycart_box {
   color: #4c4c4c;
