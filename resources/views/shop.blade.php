@@ -5,12 +5,14 @@
    <div class="">
        <div class="mx-auto" style="max-width:1200px">
         
-           <h1 style="color:#555555; text-align:center; font-size:1.2em; padding:24px 0px; font-weight:bold;">商品一覧</h1>
+           <!-- <h1 style="color:#555555; text-align:center; font-size:1.2em; padding:24px 0px; font-weight:bold;">商品一覧</h1> -->
+           <h1 class="text-current text-center text-xl py-6 font-semibold">商品一覧</h1>
            <div class="">
-               <div class="d-flex flex-row flex-wrap">
+               <!-- <div class="d-flex flex-row flex-wrap"> -->
+               <div class="flex flex-row flex-wrap"> 
                        @foreach($stocks as $stock) <!--商品情報を$stocksでforeach文で回す -->
                            <div class="col-xs-6 col-sm-4 col-md-4 ">
-                               <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                               <div class="max-w-sm rounded overflow-hidden shadow-lg font-semibold text-center my-3 py-3">
                                    {{$stock->name}} <br>
                                    {{$stock->fee}}円<br>
                                    <img src="/image/{{$stock->imgpath}}" alt="" class="incart" >
