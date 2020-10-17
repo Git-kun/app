@@ -17,7 +17,7 @@
                                    {{$stock->fee}}円<br>
                                    <img src="/image/{{$stock->imgpath}}" alt="" class="object-scale-down h-48 w-full" >
                                    <br>
-                                   {{$stock->detail}} <br>
+                                   <div class="whitespace-pre overflow-x-auto">{{$stock->detail}} </div><br>
                                    <form action="mycart" method="post">
                                        @csrf
                                        <input type="hidden" name="stock_id" value="{{ $stock->id }}">
