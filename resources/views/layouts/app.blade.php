@@ -21,7 +21,8 @@
 </head>
 <body>
    <div id="app">
-       <nav class="navbar navbar-expand-md navbar-light  shadow-sm" style="background-color:#0092b3; color:#fefefe;">
+       <!-- <nav class="navbar navbar-expand-md navbar-light  shadow-sm" style="background-color:#0092b3; color:#fefefe;"> -->
+       <nav class="navbar navbar-expand-md navbar-light  shadow-sm bg-blue-600 ">
            <div class="container">
                <a class="navbar-brand" style="color:#fefefe; font-size:1.4em" href="{{ url('/') }}" >
                    {{ config('app.name', 'Laravel') }}
@@ -90,23 +91,12 @@
        <main class="py-4">
            @yield('content')
        </main>
-       <footer class="footer_design">
-<!-- 
-        @guest
-            <p class="nav-item" style="display:inline;">
-                <a class="nav-link" href="{{ route('login') }}" style="color:#fefefe; display:inline;">{{ __('ログイン') }}</a>
-
-            @if (Route::has('register'))
-
-                    <a class="nav-link" href="{{ route('register') }}" style="color:#fefefe; display:inline;">{{ __('会員登録') }}</a>
-                </p>
-            @endif
-        
-        @endguest
-        <br> -->
-        <div style="margin-top:24px;">
+       <footer class="bg-blue-600 text-center">
+        <!-- <div style="margin-top:24px;"> -->
+        <div class="mt-4 pb-5">
         <br>
-        <a class="navbar-brand" style="color:#fefefe; font-size:2.4em" href="{{ url('/') }}" >Shopsite</p><br>
+        <!-- <a class="navbar-brand" style="color:#fefefe; font-size:2.4em" href="{{ url('/') }}" >Shopsite</p><br> -->
+        <a class="font-size:2.4em text-4xl text-white" href="{{ url('/') }}" >Shopsite</p>
         </div>
        </footer>
    </div>

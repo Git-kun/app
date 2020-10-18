@@ -164,7 +164,7 @@ a {
 
 a:hover {
   color: #1d68a7;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 a:not([href]):not([class]) {
@@ -10588,10 +10588,10 @@ img.cart {
 }
 
 .footer_design {
-  background-color: #07728a;
+  /* background-color: #07728a;
   text-align: center;
   color: #fefefe;
-  padding: 60px;
+  padding: 60px; */
 }
 
 .buy-btn {
