@@ -8,7 +8,6 @@
            <h1 style="color:#555555; text-align:center; font-size:1.2em; padding:24px 0px; font-weight:bold;">検索結果</h1>
            <div class="">
                <div class="d-flex flex-row flex-wrap">
-           
                        @foreach($data as $stock) <!--商品情報を$stocksでforeach文で回す -->
                            <div class="col-xs-6 col-sm-4 col-md-4 ">
                                <div class="mycart_box">
