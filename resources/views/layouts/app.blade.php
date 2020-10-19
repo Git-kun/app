@@ -77,11 +77,17 @@
                                <img src="{{ asset('image/cart.png') }}" class="cart" >
                            </a>
                        @endguest
-                       <div class="inputBox">
+                       <!-- <div class="inputBox">
                         <form name="search_form" class="search_form" method="get" action="{{url('/search')}}">
-                            <!-- <input type="hidden" name="search" value="true" /> -->
                             <img src="{{ asset('image/search.png') }}" class="cart">
                             <input type="text" class="fText" name="name">
+                        </form>
+                       </div> -->
+                       <div class="border-b-2 border-white">
+                        <form name="search_form" class="focus:bg-transparent" method="get" action="{{url('/search')}}">
+                            <!-- <input type="hidden" name="search" value="true" /> -->
+                            <input type="image"img src="{{ asset('image/search.png') }}" class="w-8 ml-2">
+                            <input type="text" class="outline-none bg-transparent focus:bg-transparent " name="name">
                         </form>
                        </div>
                    </ul>
