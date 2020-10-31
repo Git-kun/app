@@ -22,9 +22,9 @@ class ShopController extends Controller
     {
         $data = $cart->showCart();
         return view('mycart',$data); 
-        
     }
 
+    
     public function addMycart(Request $request,Cart $cart)
    {
        //カートに追加の処理
