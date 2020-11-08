@@ -15,7 +15,7 @@ class ShopController extends Controller
     public function index()
     {
         $stocks = Stock::Paginate(6); //Eloquantで検索(6つのデータを1ページにページネーション)
-        return view('shop',compact('stocks')); //stocksを持ってshop.blade.phpを表示する
+        return view('shop',compact('stocks')); //stocksを持ってshop.blade.phpを表示
     }
 
     public function myCart(Cart $cart) //カートの中身を確認
